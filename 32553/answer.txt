@@ -1,0 +1,24 @@
+복사 생성자란클래스가 파라메터로 호출(call by value) 등 복사가 이루어질때, 얕은 복사가 일어나면  문제가 생기므로, 깊은 복사가 될 수 있게 해주는 생성자이다.
+
+예시(sentense 클래스는 char *line_을 가지고 있으며 스트링을 받으면 저장하고 출력하는  클래스임)
+class sentense{
+	public:
+	sentense(){
+		line_=strdup("");
+	}
+	sentense(string a){
+		line_=strdup(a);
+	}
+	sentense(&setense a){	//복사 생성자
+		line_=strdup(a.line_);	//깊은 복사가 이루어짐
+	}
+	~sentense(){
+		free(line_);
+	}
+	void print(){
+		std::cout<<"line_"<<std::endl;
+	}
+	private:
+		char *line_;
+
+};

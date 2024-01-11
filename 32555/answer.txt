@@ -1,0 +1,39 @@
+상위 클래스에서 기능을 제한한 하위클래스가 있을때, 그냥 상속을 받는다면 하위 클래스에서도 상위 클래스의 (제한되지않은) 메소드를 사용 할 수 있으므로 문제가 생긴다.
+
+이때, 이 문제를 해결하기위해 private 상속을 하면 이 문제를 해결 할 수 있다.
+private 상속이란, 상속을 받긴 받았으나 대외적으로(하위 클래스를 제외한 모든 곳에서) 상속을 받지 않았다고 인식 하는 것이다.
+
+ex) (생성자등 설명에 필요도가 적은 부분은 생략하였음)
+class int_list{	//모든 정수를 넣는 list를 가진 클래스
+	protected:
+		std::list<int> int_list_;
+	
+	public:
+		void add(int a){
+			int_list_.push_back(a)
+		}
+};
+
+class positive_list : private int_list{	//양의 정수만 넣는 클래스
+	private:
+		
+	public:
+		void add(int a){
+			if(a>0){
+				int_list::add(a)
+			}else{
+				return;
+			}
+		}
+};
+
+private 상속을 받지 않으면  메인이나 다른 곳에서
+
+positive_list a;
+int b=-3;
+a.int_list::add(b);
+이렇게 선언할 시 -3의 값을 가진 b가  들어가게된다
+
+그러나 private 상속을 받았기에
+a.int_list::add(-3)을 하면 컴파일러에서 에러가 생겨 상위 클래스의 함수가 호출이 불가능해져서
+문제가 해결된다.

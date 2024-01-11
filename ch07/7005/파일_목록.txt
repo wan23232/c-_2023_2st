@@ -1,0 +1,7 @@
+	* 제출 파일은 hello.cpp;hello;a.out 
+
+	* 배포 파일: hello.cpp
+배포파일 : hello.cpp 다운로드 성공.
+	* 문제파일은 problem.txt 입니다.
+
+	* 테스트 파일 없음

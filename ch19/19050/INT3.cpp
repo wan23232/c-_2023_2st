@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+// INT1.cpp 의 클래스를 복사
+class INT {
+	public:
+		// 생성자 2개  필요.
+		INT():data_(0){}
+		INT(int n):data_(n){}
+		int getValue(){ return data_ ; }
+		INT operator + (INT b){
+			INT temp(this->getValue()+b.getValue());  // 두수를 더한 값을 초기치로 준다.
+			// temp를 반환한다.
+			return temp;
+
+		}
+		INT operator *(INT b){
+			INT temp(this->getValue()*b.getValue());  // 두수를 더한 값을 초기치로 준다.
+			// temp를 반환한다.
+			return temp;
+
+		}
+	private:
+		int data_;
+};
+// add 함수를 복사하여 연산자로 교체
+
+
+int main(){
+	INT x(1), y(2), z;
+	z = x + y; 
+	z = z * z;
+	cout << z.getValue() << endl;
+}

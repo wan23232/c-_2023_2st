@@ -1,0 +1,8 @@
+다중 상속을 이용하여 문자를 보내는 Logger를 만들어보라.
+Logger+MsgSender 다중 상속(Interface + Class)
+Files: sms.o sms.h smslogger.cpp (배포)
+
+컴파일 방법: g++ sms.o smslogger.cpp
+
+보낼 메시지는 자기 계정 
+예:  "oopa39 홍길동"

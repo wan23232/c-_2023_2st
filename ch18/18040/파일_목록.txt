@@ -1,0 +1,10 @@
+	* 제출 파일은 sms.h;sms.o;smslogger.cpp 
+
+	* 배포 파일: logger.h;sms.h;sms.o;smslogger.cpp
+배포파일 : logger.h 다운로드 성공.
+배포파일 : sms.h 다운로드 성공.
+배포파일 : sms.o 다운로드 성공.
+배포파일 : smslogger.cpp 다운로드 성공.
+	* 문제파일은 problem.txt 입니다.
+
+	* 테스트 파일 없음

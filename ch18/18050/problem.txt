@@ -1,0 +1,2 @@
+이전의 sms logger 를 단일 상속 구조의 object adapter형식으로 바꾸어보라.
+(복사해서 수정)

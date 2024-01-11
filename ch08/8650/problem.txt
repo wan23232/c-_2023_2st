@@ -1,0 +1,15 @@
+C언어에서 random 과 srandom을 사용하면 난수 발생기를 만들 수 있다. 이를 클래스화 하여 예제와 같이 사용할 수 있도록 만들라. get 메소드는 실제로 난수를 생성해서 돌려주는 함수이다.
+초기화를 "적절한 곳"에서 해주어야 한다.
+
+
+참고로 C언어에서 random/srandom 사용법은 다음 예와 같다.
+* VC++에서는 rand/srand 쌍을 사용해야할 지도 모른다.  ==> 해당 없음.
+
+#include <stdlib.h>
+#include <time.h>
+int main(){
+     srandom(time(NULL));       // 현재 시각으로 난수를 초기화
+     for (int i=0; i<10; i++){
+       printf("%d\n", random());  // 난수 발생
+     }
+}

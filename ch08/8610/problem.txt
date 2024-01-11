@@ -1,0 +1,30 @@
+복소수를 나타내는 클래스 Complex 를 만들라. 실수부와 허수부는 각기 double 이다.
+(Hint: 데이터가 전부 private이므로  global 함수 내에서는 a.real_ 처럼
+쓸 수가 없다. 이 경우 단순히 real_ 값을 돌려주는 함수로서
+double getreal(){ return real_; } 이런 함수를 만들어 주고 사용하면 된다. 
+
+다음과 같이 테스트한다.
+
+int main(){
+    Complex a, b, c, d;
+    a.setValue(1.1, 2.2);   // 이것은 1.1 + 2.2i 라는 뜻.
+    b.setValue(2.2, 3.3);
+
+    c = add(a, b);  // add는 global 함수이다. 작성하라. 실수부는 실수부끼리, 허수부는 허수부끼리 더한다.
+
+    a.addTo(b);  //  a에 b를 더한다.
+
+    d = sub(a, b);  // 뺄셈을 나타내는 global 함수. a 에서 b를 뺀다.
+
+    cout << "a = " ;
+    a.print();   // 자기 자신의 값을 복소수 형태로 출력하라.
+    cout << "c = " ;
+    c.print();
+    cout << "d = ";   // 추가. 2017.9.28.
+    d.print();      // 추가. 2017.9.28.
+
+    a.addTo(a).addTo(b).addTo(c);  // 개념적으로 말하자면 a += a; a+= b; a+= c;
+    cout << "a = ";
+    a.print();
+
+}

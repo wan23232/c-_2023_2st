@@ -1,0 +1,10 @@
+	* 제출 파일은 dog.cpp;dog.h;jindo.cpp;jindo.h;main.cpp 
+
+	* 배포 파일: dog.cpp;dog.h;main.cpp
+배포파일 : dog.cpp 다운로드 성공.
+배포파일 : dog.h 다운로드 성공.
+배포파일 : main.cpp 다운로드 성공.
+	* 문제파일은 problem.txt 입니다.
+
+	* 샘플 테스트 파일은 testdata1.txt 입니다.
+

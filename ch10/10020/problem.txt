@@ -1,0 +1,16 @@
+setSuitRank 함수에서 suit와 rank중 하나라도 값이 범위를 넘는 경우는 변경하지 않고 exception 처리를 하도록 수정하라.  (출력 메시지: "Error")
+
+실행 예:
+$ a.out
+0 0
+♠A
+4 4
+Error
+1 12
+♡K
+1 13
+Error
+^d
+$
+
+Hint: while문 안에 try-catch를 넣어야 오류 후에도 반복이 된다.

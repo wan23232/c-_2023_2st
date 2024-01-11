@@ -1,0 +1,6 @@
+card3.cpp 를 세개의 파일로 분리하라.
+card.h : 클래스의 정의, including prototypes for methods
+card.cpp : 클래스의 method definition
+main.cpp : 주 프로그램
+
+컴파일 방법: g++ card.cpp main.cpp

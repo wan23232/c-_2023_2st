@@ -1,0 +1,2 @@
+cdp_main.cpp 처럼 실행할 수 있도록 song class, cd class, 그리고 cdp클래스를
+정의하라. 각 클래스는 각기 다른 파일에 작성한다.

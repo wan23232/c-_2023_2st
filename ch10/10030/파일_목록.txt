@@ -1,0 +1,10 @@
+	* 제출 파일은 main.c;random.h;random.o;report.txt 
+
+	* 배포 파일: random.h;random.o;random2.o
+배포파일 : random.h 다운로드 성공.
+배포파일 : random.o 다운로드 성공.
+배포파일 : random2.o 다운로드 성공.
+	* 문제파일은 problem.txt 입니다.
+
+	* 샘플 테스트 파일은 testdata1.txt 입니다.
+
